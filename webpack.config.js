@@ -28,7 +28,7 @@ module.exports = {
   //stats: "errors-only",
   devServer: {
     //stats: "errors-only",
-    contentBase: path.join(__dirname, "dist"),
+    static: {directory: path.join(__dirname, "dist")},
     compress: true,
     port: 5000,
     historyApiFallback: true,
